@@ -1,0 +1,1 @@
+Product images are intentionally loaded from remote Unsplash URLs in src/data.js. There are 48 unique product entries plus homepage/category imagery.

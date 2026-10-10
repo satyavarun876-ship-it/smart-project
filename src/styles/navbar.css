@@ -1,0 +1,22 @@
+.site-header { position: sticky; top: 0; z-index: 50; background: rgba(247,246,242,.92); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(222,219,211,.75); }
+.navbar { max-width: 1240px; margin: auto; min-height: 76px; padding: 0 24px; display: flex; align-items: center; gap: 28px; }
+.logo { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; letter-spacing: -.04em; margin-right: auto; }
+.logo span { display: inline-block; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-left: 3px; }
+.nav-links { display: flex; gap: 22px; font-size: 14px; font-weight: 600; }
+.nav-links a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.nav-actions { display: flex; align-items: center; gap: 8px; }
+.icon-link { position: relative; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; background: white; border: 1px solid var(--line); }
+.badge { position: absolute; top: -4px; right: -3px; min-width: 18px; height: 18px; padding: 0 4px; display: grid; place-items: center; border-radius: 20px; background: var(--accent); color: var(--ink); font-size: 10px; font-weight: 800; border: 2px solid #f7f6f2; }
+.user-menu { display: flex; align-items: center; gap: 8px; }
+.user-name { font-size: 13px; font-weight: 700; max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.logout { border: 0; background: transparent; font-size: 13px; font-weight: 700; padding: 8px; }
+.mobile-menu { display: none; }
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .mobile-menu { display: grid; }
+}
+@media (max-width: 560px) {
+  .navbar { padding: 0 16px; gap: 8px; }
+  .user-name { display: none; }
+  .logo { font-size: 22px; }
+}

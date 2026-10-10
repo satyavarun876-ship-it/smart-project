@@ -1,0 +1,8 @@
+.footer { background: var(--ink); color: #fff; padding: 60px 24px 25px; }
+.footer-inner { max-width: 1240px; margin: auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
+.footer h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 14px; }
+.footer p, .footer a { color: #bdbab2; font-size: 14px; line-height: 1.7; }
+.footer a { display: block; margin: 7px 0; }
+.footer-bottom { max-width: 1240px; margin: 45px auto 0; padding-top: 18px; border-top: 1px solid #333; color: #8d8a83; font-size: 12px; }
+@media (max-width: 800px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .footer-inner { grid-template-columns: 1fr; } }
